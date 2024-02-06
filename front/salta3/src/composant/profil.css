@@ -1,0 +1,144 @@
+main{
+    align-items: center;
+    display: flex;
+}
+.profile{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 100px;
+}
+.profile-header{
+    width:30%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    padding-top: 60px;
+    margin-right: -50px;
+}
+.profile-image-wrapper{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+.profile-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.upload-profile-photo-icon , .upload-profile-photo-btn{
+    background-color: #eee;
+    border: 1px solid  transparent;
+    border-radius: 20%;
+    padding: 0 5px;
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    margin: auto;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10; 
+    font-size: 20px;
+}
+.upload-profile-photo-btn{
+    border-radius: 5px;
+    font-size: 13px;
+    color: black;
+    right: -53px;
+}
+.profile-username{
+   font-size: 30px;
+   color :rgb(96, 94, 94);
+   margin: 10px 0 ;
+   font-family: serif;
+}
+
+.profile-update-btn{
+    font-size: 15px;
+    font-weight: 490;
+    background-color: white;
+    color: #FF0000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete-account-btn{
+    background-color: white;
+    color: #FF0000;
+    border :1px solid #FF0000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    height:30px ;
+}
+.rania{
+    width:70%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+}
+.input{
+    width:40%;
+    color: rgb(96, 94, 94);
+    text-align: center;
+}
+.col1 , .col2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(96, 94, 94);
+    gap: 20px;
+}
+.col2{
+    gap: 35px;
+}
+.hr{
+    width: 1px;
+    background-color: #FF0000;
+    height: 400px;
+    margin-top: 50px;
+}
+.retour{
+    color: black;
+    text-decoration: none;
+}
+@media  (max-width:990px){
+    .profile{
+
+        flex-direction: column;
+        padding: 0;
+        margin-left: 30px;  
+    }
+    .profile-header{
+        width:30%;
+        height: 250px;
+    }
+    .hr{
+        height: 1px;
+        width: 100%;
+    }
+    .rania{
+        margin-top: 30px;
+padding: 0;
+align-items: baseline;
+    }
+    .input{
+        width: 100%;
+    }
+    .col1{
+        width: 50%;
+    }
+    .col2{
+width: 50%;
+gap: 25px;
+    }
+}
